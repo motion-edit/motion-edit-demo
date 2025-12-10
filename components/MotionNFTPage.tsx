@@ -32,7 +32,7 @@ const MotionNFTPage: React.FC = () => {
         >
           <div className="text-center max-w-[600px] mx-auto w-full flex items-center justify-center relative">
               <img 
-                src="/motionedit_images/examples/motionnft_pipeline.png" 
+                src="motionedit_images/examples/motionnft_pipeline.png" 
                 alt="Benchmark Result" 
                 className="w-full h-full object-cover"
               />
@@ -52,7 +52,7 @@ const MotionNFTPage: React.FC = () => {
         >
           <div className="text-center max-w-[1000px] mx-auto w-full flex items-center justify-center relative">
               <img 
-                src="/motionedit_images/examples/motionnft_quantitative.png" 
+                src="motionedit_images/examples/motionnft_quantitative.png" 
                 alt="Benchmark Result" 
                 className="w-full h-full object-cover"
               />
@@ -91,7 +91,7 @@ const MotionNFTPage: React.FC = () => {
         >
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/suppl_example_qwen.png" 
+               src="motionedit_images/examples/suppl_example_qwen.png" 
                alt="Qualitative Results Qwen" 
                className="w-full h-full object-cover"
              />
@@ -124,7 +124,7 @@ const MotionNFTPage: React.FC = () => {
         >
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/suppl_example_flux.png" 
+               src="motionedit_images/examples/suppl_example_flux.png" 
                alt="Qualitative Results Flux" 
                className="w-full h-full object-cover"
              />

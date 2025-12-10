@@ -77,7 +77,7 @@ const ComparisonPage: React.FC = () => {
           {/* Using placeholder as requested for the comparison chart/grid */}
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/fail_closed.png" 
+               src="motionedit_images/examples/fail_closed.png" 
                alt="Comparison Matrix" 
                className="w-full h-full object-cover"
              />
@@ -110,7 +110,7 @@ const ComparisonPage: React.FC = () => {
           {/* Using placeholder as requested for the comparison chart/grid */}
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/fail_open.png" 
+               src="motionedit_images/examples/fail_open.png" 
                alt="Comparison Matrix" 
                className="w-full h-full object-cover"
              />

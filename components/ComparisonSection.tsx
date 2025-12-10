@@ -18,7 +18,7 @@ const ComparisonSection: React.FC = () => {
           {/* Dummy image placeholder as requested */}
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/motionnft_results_v2.png" 
+               src="motionedit_images/examples/motionnft_results_v2.png" 
                alt="Comparison with base model" 
                className="w-full h-full object-cover"
              />

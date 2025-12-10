@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
         {/* Logo - Stationary (No Link) */}
         <div className="flex items-center gap-3 select-none">
           <img 
-            src="/motionedit_images/logo.png" 
+            src="motionedit_images/logo.png" 
             alt="Logo" 
             className="w-8 h-8 rounded-lg object-cover"
           />

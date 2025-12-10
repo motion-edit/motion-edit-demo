@@ -32,7 +32,7 @@ const DatasetPage: React.FC = () => {
         >
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/benchmark_comparison_v3.png" 
+               src="motionedit_images/examples/benchmark_comparison_v3.png" 
                alt="Benchmark Comparison" 
                className="w-full h-full object-cover"
              />
@@ -90,7 +90,7 @@ const DatasetPage: React.FC = () => {
         >
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/data_pipeline.png" 
+               src="motionedit_images/examples/data_pipeline.png" 
                alt="Dataset Overview" 
                className="w-full h-full object-cover"
              />
@@ -111,7 +111,7 @@ const DatasetPage: React.FC = () => {
         >
           <div className="w-full bg-gray-100 flex items-center justify-center relative">
              <img 
-               src="/motionedit_images/examples/data_examples_v2.png" 
+               src="motionedit_images/examples/data_examples_v2.png" 
                alt="Dataset Overview" 
                className="w-full h-full object-cover"
              />
