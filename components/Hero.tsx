@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             className="flex flex-wrap justify-center gap-4 my-8"
           >
             <a 
-              href="https://arxiv.org/abs/2405.14820" 
+              href="https://motion-edit.github.io/" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600/10 hover:bg-blue-600/20 font-medium transition-colors"
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               Paper
             </a>
             <a 
-              href="https://github.com/elainew728/MotionEdit" 
+              href="https://motion-edit.github.io/" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600/10 hover:bg-blue-600/20 font-medium transition-colors"
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
               Code
             </a>
             <a 
-              href="https://huggingface.co/elaine728/MotionNFT" 
+              href="https://motion-edit.github.io/" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600/10 hover:bg-blue-600/20 font-medium transition-colors"
@@ -122,7 +122,8 @@ const Hero: React.FC = () => {
              <video 
                className="w-full h-full object-contain"
                controls
-              //  muted
+               muted
+               autoPlay
                loop
                playsInline
              >
