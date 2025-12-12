@@ -20,7 +20,7 @@ const MotionNFTPage: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-500 font-light"
           >
-            We introduce MotionNFT, a motion-aware reward framework designed for NFT training on motion-editing tasks. Since our objective is to evaluate how accurately a model applies the intended action to subjects and objects, our reward function must quantify the alignment between model-predicted motion and the ground-truth motion edit. Inspired by the use of optical flow for measuring motion between consecutive video frames, we adopt an optical-flow-based motion-centric scoring framework that treats each input-edit pair as an implicit "before-after" sequence.
+            We introduce <strong className="font-extrabold">MotionNFT</strong> (Motion Negative-aware Fine Tuning), a motion-aware reward framework designed for NFT training on motion editing tasks. Since our objective is to evaluate how accurately a model applies the intended action to subjects and objects in images, our reward model must quantify the alignment between model-predicted motion and the ground truth motion edit. Inspired by the use of optical flow for measuring motion between video frames, we adopt an optical flow-based motion-centric scoring framework that measures the level of alignment between input-edit motion and input-ground truth motion.
           </motion.p>
         </div>
 
@@ -39,7 +39,7 @@ const MotionNFTPage: React.FC = () => {
           </div>
           <div className="p-6 bg-white border-t border-gray-100">
             <p className="text-gray-600">
-              MotionNFT's Reward Scoring pipeline. For each sampled model-edited image, we measure the alignment between the input-generated optical flow and the input-ground truth optical flow, obtaining the final reward score.
+              MotionNFT's Reward Scoring pipeline. For each sampled model-edited image, we measure the alignment between the input-generated optical flow and the input-ground truth optical flow along 2 perspectives--magnitude and direction--obtaining the final reward score.
             </p>
           </div>
         </motion.div>
@@ -60,7 +60,7 @@ const MotionNFTPage: React.FC = () => {
           <div className="p-6 bg-white border-t border-gray-100">
             {/* <h3 className="text-xl font-bold text-gray-900 mb-2">Dataset Statistics</h3> */}
             <p className="text-gray-600">
-              Quantitative results on MotionEdit-Bench. Among existing methods, Step1X-Edit and BAGEL achieve the strongest motion-editing performance, while diffusion-based editors such as AnyEdit and MagicBrush perform poorly across both generative and discriminative metrics. FLUX.1 Kontext [Dev] and Qwen-Image-Edit models trained with MotionNFT yields the best overall results: for both models, applying MotionNFT boosts all generative metrics, MAS and pairwise win rate.
+              Quantitative results on MotionEdit-Bench. Among existing methods, diffusion-based editors such as Instruct-P2P and MagicBrush perform poorly across both generative and discriminative metrics. FLUX.1 Kontext [Dev] and Qwen-Image-Edit models trained with MotionNFT yields the best overall results: for both models, applying MotionNFT boosts all generative metrics, MAS and pairwise win rate.
             </p>
           </div>
         </motion.div>
@@ -131,7 +131,7 @@ const MotionNFTPage: React.FC = () => {
           </div>
         </motion.div>
 
-        <div className="p-6 bg-white border-t border-gray-100">
+        {/* <div className="p-6 bg-white border-t border-gray-100">
           <h3 className="text-xl font-bold text-gray-900 mb-2">Framework Architecture</h3>
           <p className="text-gray-600">
             Overview of the MotionNFT framework, illustrating the motion alignment rewards and negative-aware fine-tuning process.
@@ -145,7 +145,7 @@ const MotionNFTPage: React.FC = () => {
           <p>
             Additionally, our Negative-aware FineTuning strategy helps the model avoid common artifacts and unintended changes by explicitly penalizing deviations from the non-edited regions of the image, preserving the background and subject identity.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

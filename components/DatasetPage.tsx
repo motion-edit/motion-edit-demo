@@ -20,7 +20,7 @@ const DatasetPage: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-500 font-light"
           >
-            We curate MotionEdit, a high-quality dataset and benchmark specifically targeting motion editing, consisting of paired input-target image examples extracted and validated from high-resolution video frames to ensure accurate, natural, and coherent motion changes. MotionEdit captures realistic action and interaction changes that preserve identity, background, and style, in contrast to prior datasets where edit data is either static, unfaithful, or visually inconsistent. Moreover, our data is sourced from a large set of diverse videos, ensuring the assessment of diverse sub-categories of motion image editing, such as posture, orientation, and interaction changes.
+            We curate <strong className="font-extrabold">MotionEdit</strong>, a high-quality dataset and benchmark specifically targeting motion editing. MotionEdit consists of paired input-target image edit examples extracted and validated from high-resolution video frames to ensure accurate, natural, and coherent motion changes. MotionEdit captures realistic action and interaction changes that preserve identity, background, and style, in contrast to prior datasets where edit data is either static, unfaithful, or visually inconsistent. Moreover, our data is sourced from a large set of diverse videos, ensuring the assessment of diverse sub-categories of motion image editing, such as posture, orientation, and interaction changes.
           </motion.p>
         </div>
 
@@ -40,7 +40,7 @@ const DatasetPage: React.FC = () => {
           <div className="p-6 bg-white border-t border-gray-100">
             {/* <h3 className="text-xl font-bold text-gray-900 mb-2">Dataset Statistics</h3> */}
             <p className="text-gray-600">
-              Comparison of existing image editing benchmarks with MotionEdit. Prior datasets lack reliable motion-edit supervision—either focusing only on appearance edits or offering low-quality, inconsistent action changes with artifacts. MotionEdit fills this gap by providing high-quality, instruction-following motion edits with paired input-target image data, enabling accurate evaluation and training of motion-aware image editing models.
+              Comparison of existing image editing datasets with MotionEdit. Prior datasets lack reliable motion edit supervision -- either focusing only on appearance edits or offering low-quality, inconsistent action changes with artifacts. MotionEdit bridges this research gap by providing high-quality motion edit data with paired input-target images, enabling accurate evaluation and training of motion-aware image editing models.
             </p>
           </div>
         </motion.div>
@@ -55,10 +55,10 @@ const DatasetPage: React.FC = () => {
                 We first obtain a broad range of image pairs by segmenting collected videos from <a href="https://huggingface.co/datasets/WenhaoWang/ShareVeo3" className="text-blue-600 hover:underline">ShareVeo3</a> and <a href="https://huggingface.co/datasets/nyuuzyou/klingai" className="text-blue-600 hover:underline">KlingAI</a> into 3-second windows and sample the first and last frame of each segment.
               </li>
               <li>
-                Next, we leverage a MLLM to evaluate each frame pair along three critical dimensions: Setting Consistency, Motion and Interaction Change, and Subject Integrity and Quality. The MLLM also outputs a binary keep/discard decision.
+                Next, we leverage a MLLM to evaluate each frame pair along 3 critical dimensions: <strong className="font-extrabold">Setting Consistency, Motion and Interaction Change</strong>, as well as <strong className="font-extrabold">Subject Integrity and Quality</strong>. The MLLM also outputs a binary keep-or-discard decision for each frame pair baed on its analysis.
               </li>
               <li>
-                Finally, we convert the MLLM-generated motion-change summaries into user-style editing prompts by following Qwen-Image's prompt refinement procedure. This step removes unnecessary analysis details and standardizes prompts into imperative form.
+                Finally, we convert the MLLM-generated motion-change summaries into user-style editing prompts by following Qwen-Image's prompt refinement procedure. This step removes unnecessary analysis details and standardizes editing prompts into imperative form.
               </li>
             </ul>
             {/* 👆 END OF REPLACEMENT 👆 */}
@@ -75,7 +75,7 @@ const DatasetPage: React.FC = () => {
                 We perform a random 90/10 train-test split, resulting in 9,142 training data and 1,015 evaluation data that constitutest MotionEdit-Bench. Each sample includes a source or input image, a target image exhibiting a real motion transition from the original video, and a precise motion edit instruction.
               </li>
               <li>
-                MotionEdit's data can be generally categorized into 6 motion edit types: Pose / Posture, Locomotion / Distance, Object State / Formation, Orientation / Viewpoint, Subject-Object Interaction, and Inter-Subject Interaction.
+                MotionEdit's data can be generally categorized into 6 motion edit types: <strong className="font-extrabold">Pose / Posture, Locomotion / Distance, Object State / Formation, Orientation / Viewpoint, Subject-Object Interaction</strong>, and <strong className="font-extrabold">Inter-Subject Interaction</strong>.
               </li>
             </ul>
             {/* 👆 END OF REPLACEMENT 👆 */}

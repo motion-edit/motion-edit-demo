@@ -40,7 +40,7 @@ const ComparisonPage: React.FC = () => {
            <div className="bg-green-50 p-6 rounded-xl border border-green-100">
               <h3 className="text-xl font-bold text-green-900 mb-2">Identity Preservation</h3>
               <p className="text-green-800/80 text-sm">
-                 Thanks to the Negative-aware component, MotionNFT maintains the visual identity of subjects and backgrounds better than competing methods.
+                 MotionNFT maintains the visual identity of subjects and backgrounds better than competing methods.
               </p>
            </div>
            <div className="bg-purple-50 p-6 rounded-xl border border-purple-100">

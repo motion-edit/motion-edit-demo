@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -10,6 +10,10 @@ import ComparisonPage from './components/ComparisonPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   const renderPage = () => {
     switch (currentPage) {
